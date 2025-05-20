@@ -1,6 +1,10 @@
 ---
 import '../styles/global.css'
 
+import Navigation from '../components/Navigation.astro'
+
+import Footer from '../components/Footer.astro'
+
 const blogTitle = "Mi blog de Astro Aprendizaje"
 ---
 
@@ -13,9 +17,7 @@ const blogTitle = "Mi blog de Astro Aprendizaje"
     <title>{blogTitle}</title>
   </head>
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>{blogTitle}</h1>
     <p>Aquí es donde publicaré sobre mi viaje de aprendizaje de Astro.</p>
@@ -24,5 +26,7 @@ const blogTitle = "Mi blog de Astro Aprendizaje"
       <li><a href="/posts/post-2/">Publicación 2</a></li>
       <li><a href="/posts/post-3/">Publicación 3</a></li>
     </ul>
+
+    <Footer />
   </body>
 </html>

@@ -1,22 +1,25 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 
-const indexTitle = "Página de Inicio"
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+const pageTitle = "Página de Inicio";
 ---
 
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{indexTitle}</title>
-	</head>
-	<body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Navigation />
 
-		<h1>{indexTitle}</h1>
-	</body>
+    <h1>{pageTitle}</h1>
+
+    <Footer />
+  </body>
 </html>
