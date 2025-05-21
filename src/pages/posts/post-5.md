@@ -7,6 +7,7 @@ image:
   url: ""
   alt: none
 pubDate: 2025-05-20
+tags: ["astro"]
 ---
 
 Esta es la nueva entrada del post 5
